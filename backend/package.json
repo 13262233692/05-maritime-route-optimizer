@@ -1,0 +1,19 @@
+{
+  "name": "maritime-route-optimizer-backend",
+  "version": "1.0.0",
+  "description": "Maritime route optimizer backend with GRIB2 parsing and A* pathfinding",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node tests/test-grib2-parser.js && node tests/test-pathfinding.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "ws": "^8.14.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
